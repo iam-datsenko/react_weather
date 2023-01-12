@@ -1,6 +1,6 @@
 import { Card } from '../types';
 
-const BASE_URL = 'http://api.openweathermap.org';
+const BASE_URL = 'https://api.openweathermap.org';
 
 export const getCardForecast = async (data: string) => {
   const response = await fetch(
