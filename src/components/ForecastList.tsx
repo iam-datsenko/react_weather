@@ -22,7 +22,7 @@ const ForecastList = ({
   return (
     <section
       className={cn(
-        'flex flex-col gap-4 md:pr-2 min-w-[320px] md:max-w-[500px] w-full h-[400px]',
+        'flex flex-col gap-4 md:pr-2 min-w-[320px] md:max-w-[500px] w-full md:h-[400px]',
         {
           'md:overflow-y-scroll': isScrollVisible,
         }

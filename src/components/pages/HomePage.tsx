@@ -20,7 +20,7 @@ const HomePage = ({
   onInputChange,
   onOpenModal,
 }: Props) => (
-  <div className="flex flex-col md:flex-row gap-8 m-10 md:m-[100px]">
+  <div className="flex flex-col md:flex-row gap-8 m-10 md:mt-[100px]">
     <Search
       input={input}
       onInputChange={onInputChange}

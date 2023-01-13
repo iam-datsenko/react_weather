@@ -115,7 +115,7 @@ const App = (): JSX.Element => {
   }, []);
 
   return (
-    <main className="flex justify-center items-center h-full w-full">
+    <main className="flex flex-col justify-center items-center h-full w-full">
       {isModalOpen && (
         <ForecastPage
           data={forecastDetails}
