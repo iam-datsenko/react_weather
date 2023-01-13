@@ -115,7 +115,7 @@ const App = (): JSX.Element => {
   }, []);
 
   return (
-    <main className="flex flex-col justify-center items-center bg-gradient-to-br from-blue-400 to-purple-400 h-[100vh] w-full">
+    <main className="flex justify-center items-center h-full w-full">
       {isModalOpen && (
         <ForecastPage
           data={forecastDetails}

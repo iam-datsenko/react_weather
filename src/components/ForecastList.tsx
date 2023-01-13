@@ -17,14 +17,14 @@ const ForecastList = ({
   onDelete,
   onOpenModal,
 }: Props) => {
-  const isScrollVisible = forecastList.length > 3;
+  const isScrollVisible = forecastList.length > 2;
 
   return (
     <section
       className={cn(
-        'flex flex-col md:max-w-[500px] w-full h-[400px] gap-4 pr-2',
+        'flex flex-col gap-4 md:pr-2 min-w-[320px] md:max-w-[500px] w-full h-[400px]',
         {
-          'overflow-y-scroll': isScrollVisible,
+          'md:overflow-y-scroll': isScrollVisible,
         }
       )}
     >

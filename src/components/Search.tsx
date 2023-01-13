@@ -14,10 +14,10 @@ const Search = ({ input, onInputChange, onOpenModal }: Props) => {
   };
 
   return (
-    <section className="w-full md:max-w-[500px] p-4 flex flex-col text-center items-center justify-center md:px-10 lg:p-24 h-full lg:h-[400px] bg-white bg-opacity-20 backdrop-blur-ls rounded drop-shadow-lg text-zinc-700">
+    <section className="flex flex-col text-center items-center justify-center w-full md:max-w-[500px] p-8 lg:p-24 md:h-[400px] bg-white bg-opacity-20 backdrop-blur-ls rounded drop-shadow-lg text-zinc-700">
       <Header />
 
-      <form className="relative flex mt-10 md:mt-4" onSubmit={handleSubmit}>
+      <form className="relative flex mt-6 md:mt-10" onSubmit={handleSubmit}>
         <input
           type="text"
           value={input}
