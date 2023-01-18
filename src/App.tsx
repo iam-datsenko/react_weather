@@ -5,6 +5,7 @@ import Error from './components/Error';
 import HomePage from './components/pages/HomePage';
 import ForecastPage from './components/pages/ForecastPage';
 import { getCardForecast, getForecastDetails } from './api/forecast';
+import { Loader } from './components/Loader';
 
 const localData = localStorage.getItem('list');
 
@@ -103,6 +104,7 @@ const App = (): JSX.Element => {
         setIsModalOpen(false);
       } finally {
         setInput('');
+        setIsLoading(false);
       }
     },
     [loadForecastDetails]
@@ -113,6 +115,8 @@ const App = (): JSX.Element => {
     setForecastDetails(null);
     setError(ErrorType.None);
   }, []);
+  
+  if (isLoading) return <Loader />;
 
   return (
     <main className="flex flex-col justify-center items-center h-full w-full">
